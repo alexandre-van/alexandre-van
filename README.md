@@ -1,4 +1,4 @@
-## Hi there 👋
+## Hello there 👋
 
 ```c++
 #include <string>
@@ -6,25 +6,25 @@
 #include <iostream>
 
 class SoftwareDeveloper {
-private:
-    std::string fullName_;
-    std::string nationality_;
-    std::vector<std::string> languagesSpoken_;
-    std::vector<std::string> programmingLanguages_;
+    private:
+        std::string fullName_;
+        std::string nationality_;
+        std::vector<std::string> languagesSpoken_;
+        std::vector<std::string> programmingLanguages_;
 
-public:
-    SoftwareDeveloper() 
-        : fullName_("Alexandre VAN")
-        , nationality_("France")
-        , languagesSpoken_({"French", "English"})
-        , programmingLanguages_({"C", "C++", "React.js", "React-Native", "Django", "Go"}) {}
+    public:
+        SoftwareDeveloper() 
+            : fullName_("Alexandre VAN")
+            , nationality_("France")
+            , languagesSpoken_({"French", "English"})
+            , programmingLanguages_({"C", "C++", "React.js", "React-Native", "Django", "Go"}) {}
 
-    void introduce() const {
-        std::cout << "👋  Hello! I'm " << fullName_ << " from " << nationality_ << ".\n";
-        printSkills("🗣️  I speak: ", languagesSpoken_);
-        printSkills("💻  I code in: ", programmingLanguages_);
-        std::cout << "🚀  Let's build something amazing together!\n";
-    }
+        void introduce() const {
+            std::cout << "👋  Hello! I'm " << fullName_ << " from " << nationality_ << ".\n";
+            printSkills("🗣️  I speak: ", languagesSpoken_);
+            printSkills("💻  I code in: ", programmingLanguages_);
+            std::cout << "🚀  Let's build something amazing together!\n";
+}
 
 private:
     void printSkills(const std::string& prefix, const std::vector<std::string>& langs) const {
