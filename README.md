@@ -14,10 +14,10 @@ class SoftwareDeveloper {
             , programmingLanguages_({"C", "C++", "React.js", "React-Native", "Django", "Go"}) {}
 
         void introduce() const {
-            std::cout << "👋  Hello! I'm " << fullName_ << " from " << nationality_ << ".\n";
-            printSkills("🗣️  I speak: ", languagesSpoken_);
-            printSkills("💻  I code in: ", programmingLanguages_);
-            std::cout << "🚀  Let's build something amazing together!\n";
+            std::cout << "Hello! I'm " << fullName_ << " from " << nationality_ << ".\n";
+            printSkills("I speak: ", languagesSpoken_);
+            printSkills("I code in: ", programmingLanguages_);
+            std::cout << "Let's build something amazing together!\n";
         }
 
     private:
